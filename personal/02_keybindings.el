@@ -56,3 +56,6 @@
 
 ;; Perform general cleanup.
 (global-set-key (kbd "C-c n") 'cleanup-buffer)
+
+;; neo-tree
+(global-set-key [f8] 'neotree-toggle)
