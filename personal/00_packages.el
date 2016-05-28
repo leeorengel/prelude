@@ -6,6 +6,7 @@
 ;; My packages
 (setq prelude-packages (append '(
                                  neotree
+                                 dumb-jump
                                  ) prelude-packages))
 
 ;; Install my packages
