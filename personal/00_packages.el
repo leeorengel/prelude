@@ -7,10 +7,9 @@
 (setq prelude-packages (append '(
                                  neotree
                                  dumb-jump
+                                 smartrep
+                                 back-button
                                  ) prelude-packages))
 
 ;; Install my packages
 (prelude-install-packages)
-
-
-
