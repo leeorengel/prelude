@@ -2,6 +2,10 @@
 (global-set-key (kbd "C-x C-i") 'ido-imenu)
 
 ;; Window switching. (C-x o goes to the next window)
+;; Font size
+(define-key global-map (kbd "C-+") 'text-scale-increase)
+(define-key global-map (kbd "C--") 'text-scale-decrease)
+
 (global-set-key (kbd "C-x O") (lambda ()
                                 (interactive)
                                 (other-window -1))) ;; back one
@@ -42,6 +46,12 @@
 ;; Help should search more than just commands
 (global-set-key (kbd "C-h a") 'apropos)
 
+;; replace buffer-menu with ibuffer
+(global-set-key (kbd "C-x C-b") 'ibuffer)
+
+;; rename buffer & visited file
+(global-set-key (kbd "C-c r") 'rename-file-and-buffer)
+
 ; Magit rules!
 (global-set-key (kbd "C-x g") 'magit-status)
 
@@ -50,6 +60,12 @@
 
 ;; You know, like Readline.
 (global-set-key (kbd "C-M-h") 'backward-kill-word)
+
+;; Jump to a definition in the current file. (This is awesome.)
+(global-set-key (kbd "C-x C-i") 'ido-imenu)
+
+;; use hippie-expand instead of dabbrev
+(global-set-key (kbd "M-/") 'hippie-expand)
 
 ;; Align your code in a pretty way.
 (global-set-key (kbd "C-x \\") 'align-regexp)
