@@ -1,5 +1,6 @@
 ;;; Global Keybindings
 
+;; Change Meta from alt to command
 (setq mac-option-modifier 'super)
 (setq mac-command-modifier 'meta)
 
