@@ -4,10 +4,17 @@
 (setq mac-option-modifier 'super)
 (setq mac-command-modifier 'meta)
 
+;; Map pop-global-mark to same keys as IntelliJ IDEA
+(global-set-key (kbd "M-[") 'backward-global-mark)
+(global-set-key (kbd "M-]") 'forward-global-mark)
+
 ;; Jump to a definition in the current file. (This is awesome.)
 (global-set-key (kbd "C-x C-i") 'ido-imenu)
 
-;; Window switching. (C-x o goes to the next window)
+;; Toggle comments
+(global-set-key (kbd "M-;") 'toggle-comment-region-or-line)
+
+;; window switching. (C-x o goes to the next window)
 ;; Font size
 (define-key global-map (kbd "C-+") 'text-scale-increase)
 (define-key global-map (kbd "C--") 'text-scale-decrease)
