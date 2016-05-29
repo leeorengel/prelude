@@ -7,6 +7,10 @@
 ; Set highlight exceeding character limit to 120 rather than 80
 (setq whitespace-line-column 120)
 
+;; Retain more of the mark rings
+(setq mark-ring-max 64)
+(setq global-mark-ring-max 64)
+
 (require 'saveplace)
 (setq-default save-place t)
 (setq save-place-file (expand-file-name "personal/.saved-places" prelude-dir))
