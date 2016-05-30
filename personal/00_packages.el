@@ -8,7 +8,7 @@
                                  neotree
                                  dumb-jump
                                  smartrep
-                                 back-button
+                                 workgroups2
                                  ) prelude-packages))
 
 ;; Install my packages

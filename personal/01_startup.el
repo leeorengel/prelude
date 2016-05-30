@@ -14,3 +14,7 @@
 (require 'saveplace)
 (setq-default save-place t)
 (setq save-place-file (expand-file-name "personal/.saved-places" prelude-dir))
+
+(require 'workgroups2)
+;; Change some settings
+(workgroups-mode 1)
