@@ -11,6 +11,7 @@
 ;; Hijacking crux-smart-open-line-above, but that is already double bound to S-return which is preferred.
 (bind-key* "M-o" 'helm-projectile-find-file)
 (bind-key* "M-O" 'helm-projectile-find-file-in-known-projects)
+(bind-key* "M-F" 'helm-projectile-grep)
 
 ;; Jump to a definition in the current file. (This is awesome.)
 (global-set-key (kbd "C-x C-i") 'ido-imenu)
