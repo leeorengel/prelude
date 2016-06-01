@@ -18,3 +18,5 @@
 (require 'workgroups2)
 ;; Change some settings
 (workgroups-mode 1)
+
+(require 'bind-key)
