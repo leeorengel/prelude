@@ -12,6 +12,9 @@
 (bind-key* "M-o" 'helm-projectile-find-file)
 (bind-key* "M-O" 'helm-projectile-find-file-in-known-projects)
 (bind-key* "M-F" 'helm-projectile-grep)
+(bind-key* "M-R" 'projectile-replace)
+;; overriding forward-sentence
+(bind-key* "M-e" 'helm-projectile-recentf)
 
 ;; Jump to a definition in the current file. (This is awesome.)
 (global-set-key (kbd "C-x C-i") 'ido-imenu)
