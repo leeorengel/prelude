@@ -11,7 +11,7 @@
 ;; Hijacking crux-smart-open-line-above, but that is already double bound to S-return which is preferred.
 (bind-key* "M-o" 'helm-projectile-find-file)
 (bind-key* "M-O" 'helm-projectile-find-file-in-known-projects)
-(bind-key* "M-F" 'helm-projectile-grep)
+(bind-key* "M-F" 'helm-projectile-ag)
 (bind-key* "M-R" 'projectile-replace)
 ;; overriding forward-sentence
 (bind-key* "M-e" 'helm-projectile-recentf)
@@ -22,11 +22,11 @@
 ;; Toggle comments
 (global-set-key (kbd "M-;") 'toggle-comment-region-or-line)
 
-;; window switching. (C-x o goes to the next window)
 ;; Font size
 (define-key global-map (kbd "C-+") 'text-scale-increase)
 (define-key global-map (kbd "C--") 'text-scale-decrease)
 
+;; window switching. (C-x o goes to the next window)
 (global-set-key (kbd "C-x O") (lambda ()
                                 (interactive)
                                 (other-window -1))) ;; back one
