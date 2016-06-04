@@ -13,6 +13,8 @@
 (bind-key* "M-O" 'helm-projectile-find-file-in-known-projects)
 (bind-key* "M-F" 'helm-projectile-ag)
 (bind-key* "M-R" 'projectile-replace)
+(bind-key* "M-l" 'goto-line)
+
 ;; overriding forward-sentence
 (bind-key* "M-e" 'helm-projectile-recentf)
 
