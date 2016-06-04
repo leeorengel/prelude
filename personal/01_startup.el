@@ -20,3 +20,6 @@
 (workgroups-mode 1)
 
 (require 'bind-key)
+
+(require 'dumb-jump)
+(dumb-jump-mode)
