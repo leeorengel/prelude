@@ -23,3 +23,7 @@
 
 (require 'dumb-jump)
 (dumb-jump-mode)
+
+;; Projectile cache settings
+(setq projectile-enable-caching t)
+(setq projectile-file-exists-remote-cache-expire nil)
